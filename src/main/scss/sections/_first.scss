@@ -1,0 +1,203 @@
+.first {
+  padding: 34px 0 60px;
+
+  background-image: url("../../img/first/first-money-bg-mob.png"),
+    url("../../img/first/first-medal-bg-mob.png"),
+    url("../../img/first/first-rocket-bg-mob.png"),
+    url("../../img/first/first-bg-mob.png");
+
+  background-repeat: no-repeat;
+  background-size: 180px, 150px, 150px, cover;
+  background-position: top 200px center, top 288px left, top 308px right, center;
+
+  @include for-size(desktop) {
+    padding: 171px 0 120px;
+
+    background-image: url("../../img/first/first-bg-desk.png");
+    background-size: cover;
+    background-position: unset;
+  }
+
+  &__content {
+    margin-bottom: 317px;
+
+    @include for-size(desktop) {
+      margin: 0;
+      max-width: 661px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 5px;
+
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin-bottom: 60px;
+      font-size: 49px;
+    }
+  }
+
+  &__title--part {
+    color: rgba(82, 88, 255, 1);
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin-bottom: 40px;
+
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+}
+
+.first .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.first-list {
+  display: none;
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    @include for-size(desktop) {
+      max-width: 181px;
+      text-align: center;
+    }
+  }
+
+  &-item-img {
+    margin: 0 auto;
+  }
+
+  &-item-text {
+    @include for-size(desktop) {
+      margin: 20px 0 0;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+}
+
+// FORM
+
+.form {
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  background: #fff;
+
+  @include for-size(desktop) {
+    max-width: 373px;
+    padding: 60px 35px;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    @include for-size(desktop) {
+      font-size: 32px;
+    }
+  }
+
+  &__title--part {
+    color: rgba(0, 192, 255, 1);
+  }
+
+  &__title--part-two {
+    color: rgba(85, 88, 255, 1);
+  }
+  &__btn {
+    margin: 20px 0 0;
+    width: 100%;
+    padding: 14px 12px;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.6;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: linear-gradient(0deg, #5558ff -8.25%, #00c0ff 97.64%);
+    border-radius: 4px;
+
+    @include for-size(desktop) {
+      padding: 14px 6px;
+      display: inline-block;
+      font-size: 18px;
+      height: 57px;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:active,
+  &__btn:focus {
+    color: #00c0ff;
+    background: #ffffff;
+    border: 1px solid #00c0ff;
+  }
+}
+
+input {
+  width: 100%;
+
+  padding: 14px;
+  border: 1px solid rgba(9, 128, 184, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @include for-size(desktop) {
+    padding: 13px;
+  }
+}
+
+input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  color: rgba(9, 128, 184, 0.5);
+}
+
+input[type="tel"]::placeholder {
+  text-align: left;
+}

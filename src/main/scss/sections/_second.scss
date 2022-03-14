@@ -1,0 +1,132 @@
+.second {
+  padding: 60px 0;
+  background: #e6f3f5;
+
+  @include for-size(desktop) {
+    padding: 80px 0;
+  }
+
+  &__box {
+    @include for-size(desktop) {
+      width: 661px;
+      margin-right: 44px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #212121;
+
+    @include for-size(desktop) {
+      font-size: 32px;
+    }
+  }
+}
+
+.second .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.calculator__capital-head .sum {
+  font-weight: 300;
+  font-size: 48px;
+  color: #108dd4;
+}
+
+.calculator__capital-body .slider {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.calculator__capital-body .slider__range {
+  margin: 18px 0;
+  width: 100%;
+}
+
+.calculator__capital-body .slider__range:focus {
+  outline: none;
+}
+
+.calculator__capital-body .slider #slider_rangeSlider .slider-selection {
+  background: linear-gradient(0deg, #5558ff -8.25%, #00c0ff 97.64%);
+}
+
+.calculator__capital-body .slider #slider_rangeSlider .slider-handle {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(0deg, #ff5555 0%, #ff0000 100%);
+  //   border: 7px solid linear-gradient(0deg, #ff5555 0%, #ff0000 100%);
+}
+
+.slider__point-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include for-size(desktop) {
+    justify-content: unset;
+  }
+}
+
+.slider__point-item {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.2;
+
+  color: #212121;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
+}
+
+.slider__point-item:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 121px;
+  }
+}
+
+.calculator__income-body {
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(0deg, #5558ff -8.25%, #00c0ff 97.64%);
+  border-radius: 4px;
+
+  @include for-size(desktop) {
+    width: 243px;
+  }
+}
+
+.prediction__label {
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.prediction__sum {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  color: #ffffff;
+}

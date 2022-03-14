@@ -1,0 +1,62 @@
+<section class="first">
+  <div class="container">
+
+    <div class="first__content">
+      <h1 class="first__title">Первая автоматическая <span class="first__title--part">трейдинг-платформа</span></h1>
+      <p class="first__text">Взгляните на трейдинг по новому</p>
+      <ul class="first-list">
+        <li class="first-list-item">
+          <img src="../img/first/first-img-rocket.png" alt="ракета" class="first-list-item-img">
+          <p class="first-list-item-text">Вы больше не трейдер, вы — <b>ИНВЕСТОР</b></p>
+        </li>
+        <li class="first-list-item">
+          <img src="../img/first/first-img-money.png" alt="деньги" class="first-list-item-img">
+          <p class="first-list-item-text">Ваш доход зависит <b>ТОЛЬКО</b> от вложенной суммы</p>
+        </li>
+        <li class="first-list-item">
+          <img src="../img/first/first-img-medal.png" alt="медаль" class="first-list-item-img">
+          <p class="first-list-item-text">Вы получаете <b>ГАРАНТИЮ</b> заработка</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <form method="POST" action="thanks/index.php" class="form" id="form">
+      <h2 class="form__title">
+        <span class="form__title--part">Начни</span>
+        <span class="form__title--part-two">прямо сейчас</span>
+      </h2>
+      <div class="input_wrapper">
+        <div>
+          <input name="f_name" placeholder="Ваше имя" />
+        </div>
+        <div>
+          <input name="l_name" placeholder="Ваша фамилия" />
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+        </div>
+        <style>
+          .iti__flag-container {
+            z-index: 50;
+          }
+
+          .iti-mobile .iti__country-list {
+            width: 85%;
+          }
+        </style>
+        <input type="tel" name="phone" placeholder="Ваш телефон" autocomplete="off" required />
+        <input type="hidden" name="phone2" class="phone2" autocomplete="off" required />
+        <input type="hidden" name="pixel_id" value="<?php echo $FacebookPixel?>" />
+        <input type="hidden" name="page_lang" value="<?php echo $page_lang?>" />
+        <input type="hidden" name="query" value="<?php echo $QUERY?>" />
+        <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
+        <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
+        <input type="hidden" name="landing" value="HYPE-OFF" />
+        <button class="form__btn" type="submit">
+          Подключиться к проекту
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

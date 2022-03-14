@@ -1,0 +1,109 @@
+.footer {
+  padding: 60px 0;
+  background: linear-gradient(257.63deg, #810000 0%, #ff0000 117.33%);
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+
+    @include for-size(desktop) {
+      max-width: 485px;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.2;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin: 0 0 24px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 14px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__text--part {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__img-mob {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto 14px;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img-desk {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 425px;
+    height: 57px;
+    padding: 14px 5px;
+    margin-top: 24px;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.6;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: linear-gradient(0deg, #5558ff -8.25%, #00c0ff 97.64%);
+    border-radius: 4px;
+
+    @include for-size(desktop) {
+      max-width: 373px;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:active,
+  &__btn:focus {
+    color: #00c0ff;
+    background: #ffffff;
+    border: 1px solid #00c0ff;
+  }
+}
+
+.footer .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

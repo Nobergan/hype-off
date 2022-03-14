@@ -1,0 +1,56 @@
+.fifth {
+  padding: 60px 0;
+
+  background-image: url("../../img/fifth/fifth-bg-mob.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+
+    background-image: url("../../img/fifth/fifth-bg-desk.png");
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+
+    @include for-size(desktop) {
+      max-width: 756px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: #212121;
+
+    @include for-size(desktop) {
+      margin: 0 auto 32px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #212121;
+
+    @include for-size(desktop) {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,72 @@
+.fourth {
+  padding: 60px 0;
+  background: linear-gradient(75.97deg, #5558ff 27.4%, #32ccff 100%);
+
+  @include for-size(desktop) {
+    padding: 26px 0 47px;
+  }
+
+  &__content {
+    max-width: 425px;
+    margin: 0 auto;
+
+    @include for-size(desktop) {
+      max-width: 625px;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 16px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin: 0 auto 24px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #ffffff;
+
+    @include for-size(desktop) {
+      margin: 00;
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    width: 190px;
+    margin: 0 auto;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__img-desk {
+    display: none;
+
+    @include for-size(desktop) {
+      display: block;
+      margin-right: 42px;
+    }
+  }
+}
+
+.fourth .container {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

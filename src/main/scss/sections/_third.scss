@@ -1,0 +1,145 @@
+.third {
+  padding: 60px 0;
+
+  @include for-size(desktop) {
+    padding: 120px 0;
+  }
+
+  &__title {
+    max-width: 425px;
+    margin: 0 auto 38px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.2;
+
+    color: #000000;
+
+    @include for-size(desktop) {
+      max-width: unset;
+      margin-bottom: 76px;
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 425px;
+    padding: 14px 5px;
+    margin: 32px auto 0;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.6;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: linear-gradient(0deg, #ff5555 0%, #ff0000 100%);
+    border-radius: 4px;
+
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+
+  &__btn-desk {
+    @include for-size(desktop) {
+      position: absolute;
+      bottom: -81px;
+      left: 0;
+
+      width: 100%;
+      padding: 14px 5px;
+      margin: 32px auto 0;
+
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1.6;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      background: linear-gradient(0deg, #ff5555 0%, #ff0000 100%);
+      border-radius: 4px;
+    }
+  }
+
+  &__btn-desk:hover,
+  &__btn-desk:active,
+  &__btn-desk:focus {
+    color: #ff0000;
+    background: #ffffff;
+    border: 1px solid #ff0000;
+  }
+}
+
+.third__list {
+  max-width: 425px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    max-width: unset;
+  }
+
+  &-item {
+    padding: 40px 24px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+
+    @include for-size(desktop) {
+      max-width: 325px;
+      padding: 60px 32px;
+      margin-top: 40px;
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include for-size(desktop) {
+      margin-bottom: 0;
+      margin-right: 25px;
+    }
+  }
+
+  &-item:nth-child(2) {
+    @include for-size(desktop) {
+      position: relative;
+      height: 290px;
+      margin-top: 0;
+    }
+  }
+
+  &-item-img {
+    margin-bottom: 6px;
+  }
+
+  &-item-title {
+    margin: 0 0 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1;
+
+    color: #000000;
+  }
+
+  &-item-text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.1;
+
+    color: #000000;
+
+    @include for-size(desktop) {
+      font-size: 18px;
+    }
+  }
+}
